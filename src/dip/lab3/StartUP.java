@@ -11,11 +11,11 @@ package dip.lab3;
  */
 public class StartUP {
     public static void main(String[] args) {
-        InputSource input1 = new RandomMessageInputSource();
-        OutputSource output1 = new FileOutputSource("Message.txt");
+        MessageInputSource input1 = new RandomMessageInputSource();
+        MessageOutputSource output1 = new FileOutputSource("Message.txt");
         
         MessageExchangeService service = new MessageExchangeService(input1, output1);
-        service.ExchangeMessage();
+        service.exchangeMessage();
         
         System.out.println("Program ended.Input message was successfully delivered.");
     }

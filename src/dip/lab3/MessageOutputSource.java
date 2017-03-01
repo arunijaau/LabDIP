@@ -9,6 +9,6 @@ package dip.lab3;
  *
  * @author ajayasooriya
  */
-public interface OutputSource {
+public interface MessageOutputSource {
     public abstract void outputMessage(String message);
 }

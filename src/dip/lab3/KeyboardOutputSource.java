@@ -9,7 +9,7 @@ package dip.lab3;
  *
  * @author ajayasooriya
  */
-public class KeyboardOutputSource implements OutputSource {
+public class KeyboardOutputSource implements MessageOutputSource {
 
     @Override
     public void outputMessage(String message) {

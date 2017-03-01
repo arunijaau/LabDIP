@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author ajayasooriya
  */
-public class KeyboardInputSource implements InputSource {
+public class KeyboardInputSource implements MessageInputSource {
        
     @Override
     public String inputMessage(){

@@ -9,6 +9,6 @@ package dip.lab3;
  *
  * @author ajayasooriya
  */
-public interface InputSource {
+public interface MessageInputSource {
     public abstract String inputMessage();
 }

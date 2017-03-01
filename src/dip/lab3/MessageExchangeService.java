@@ -10,15 +10,15 @@ package dip.lab3;
  * @author ajayasooriya
  */
 public class MessageExchangeService {
-    public InputSource input;
-    public OutputSource output;
+    public MessageInputSource input;
+    public MessageOutputSource output;
 
-    public MessageExchangeService(InputSource input, OutputSource output) {
+    public MessageExchangeService(MessageInputSource input, MessageOutputSource output) {
         this.input = input;
         this.output = output;
     }
     
-    public void ExchangeMessage(){
+    public void exchangeMessage(){
         String message = input.inputMessage();
         output.outputMessage(message);
     }

@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * @author Aruni
  */
-public class RandomMessageInputSource implements InputSource {
+public class RandomMessageInputSource implements MessageInputSource {
 
     private final String[] messageArray;
     private int randomNumber;
@@ -28,7 +28,7 @@ public class RandomMessageInputSource implements InputSource {
 
     private void setRandomNumber() {
         Random randomNumbers = new Random();
-        this.randomNumber = randomNumbers.nextInt(messageArray.length - 1);
+        this.randomNumber = randomNumbers.nextInt(messageArray.length)- 1;
     }
 
     private int getRandomNumber() {

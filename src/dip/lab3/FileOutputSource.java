@@ -13,7 +13,7 @@ import java.io.*;
  *
  * @author Aruni
  */
-public class FileOutputSource implements OutputSource {
+public class FileOutputSource implements MessageOutputSource {
 
     private final String fileName;
 

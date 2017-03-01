@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author ajayasooriya
  */
-public class GuiInputSource implements InputSource{
+public class GuiInputSource implements MessageInputSource{
         
     @Override
     public String inputMessage(){
